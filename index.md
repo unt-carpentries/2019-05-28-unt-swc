@@ -6,15 +6,15 @@ address: "Willis Library, Room 443, 1506 Highland St., Denton, TX 76203"      # 
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "33.210068, -97.148954"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "Aug 23-24, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Oct 25-26, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2018-08-23      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2018-08-24        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Pamela Andrews", "Lauren Ko", "Kristy Phillips", "Mark Phillips"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Jason Ellis", "Gio Gottardi"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["lauren.ko@unt.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: https://pad.carpentries.org/2018-08-23-UNT            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite: "48607942665"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+startdate: 2018-10-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-10-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Gio Gottardi", "Kristy Phillips", "Pamela Andrews"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Madhulika Bayyavarapu", "Mark Phillips", "Lauren Ko"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["mark.phillips@unt.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://pad.carpentries.org/2018-10-25-UNT            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite: "50968632552"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
