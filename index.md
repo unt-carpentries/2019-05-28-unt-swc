@@ -2,19 +2,19 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
 venue: "University of North Texas"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Willis Library, Room 443, 1506 Highland St., Denton, TX 76203"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "Willis Library, Room 250H, 1506 Highland St., Denton, TX 76203"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "33.210068, -97.148954"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "Oct 25-26, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Jan 24-25, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2018-10-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2018-10-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Gio Gottardi", "Kristy Phillips", "Pamela Andrews", "Jason Ellis"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Madhulika Bayyavarapu", "Douglas Burns", "Maristella Feustle", "Sarah Fisher", "Mark Phillips", "Lauren Ko"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+startdate: 2019-01-24      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-01-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Kristy Phillips", "Mark Phillips"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["mark.phillips@unt.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: https://pad.carpentries.org/2018-10-25-UNT            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite: "50968632552"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+collaborative_notes: https://pad.carpentries.org/2019-01-24-UNT            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite: "54602259829"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -116,7 +116,8 @@ eventbrite: "50968632552"          # optional: alphanumeric key for Eventbrite r
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  on <strong>OR</strong> notify the <a href='mailto:lauren.ko@unt.edu'>organizers</a> that they will need a laptop provided.
+  They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
@@ -441,98 +442,56 @@ eventbrite: "50968632552"          # optional: alphanumeric key for Eventbrite r
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
 
-<div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the Jupyter notebook.
-           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
-  <h3>Python</h3>
+<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+  <h3>R</h3>
 
   <p>
-    <a href="https://python.org">Python</a> is a popular language for
-    research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
-    a bit difficult, so we recommend
-    <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
-    an all-in-one installer.
+    <a href="https://www.r-project.org">R</a> is a programming language
+    that is especially powerful for data exploration, visualization, and
+    statistical analysis. To interact with R, we use
+    <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
-
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.6 is fine).
-    </p>
-
-    <p>
-      We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
-      a programming environment that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
-    </p>
 
   <div class="row">
     <div class="col-md-4">
-      <h4 id="python-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Windows.</li>
-        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
-      </ol>
+      <h4 id="r-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
+      <p>
+        Install R by downloading and running
+        <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+        from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
+        for example when installing R packages.
+      </p>
     </div>
     <div class="col-md-4">
-      <h4 id="python-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
-      </ol>
+      <h4 id="r-macosx">macOS</h4>
+      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
+      <p>
+        Install R by downloading and running
+        <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+        from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+      </p>
     </div>
     <div class="col-md-4">
-      <h4 id="python-linux">Linux</h4>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.<br>
-          (The installation requires using the shell. If you aren't
-           comfortable doing the installation yourself
-           stop here and request help at the workshop.)
-        </li>
-        <li>
-          Open a terminal window.
-        </li>
-        <li>
-          Type <pre>bash Anaconda3-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear. If it does not, navigate to the folder where you
-          downloaded the file, for example with:
-          <pre>cd Downloads</pre>
-          Then, try again.
-        </li>
-        <li>
-          Press enter. You will follow the text-only prompts. To move through
-          the text, press the space key. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-        </li>
-        <li>
-          Close the terminal window.
-        </li>
-      </ol>
+      <h4 id="r-linux">Linux</h4>
+      <p>
+        You can download the binary files for your distribution
+        from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
+        you can use your package manager (e.g. for Debian/Ubuntu
+        run <code>sudo apt-get install r-base</code> and for Fedora run
+        <code>sudo dnf install R</code>).  Also, please install the
+        <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+      </p>
     </div>
   </div>
-{% comment %}
-  <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
-  </p>
-{% endcomment %}
-</div> {% comment %} End of 'Python' section. {% endcomment %}
+</div> {% comment %} End of 'R' section. {% endcomment %}
 
 {% comment %}
 <div id="vm">
